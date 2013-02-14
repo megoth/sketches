@@ -1,0 +1,83 @@
+
+@import "compass/reset";
+@import "lib/bootstrap";
+
+$color-background:  #ffffff;
+$color-divider:     #dddddd;
+$color-info:        #eeeeee;
+$color-link:        #56A0D3;
+$color-link-focus:  #5D8AA8;
+$color-text:        #303030;
+$color-nav-main:    #a2c0c1;
+$color-text-info:   $color-meta;
+
+@mixin typography-default {
+  color: $color-text;
+  font-family: "Arial", "Tahoma", "Georgia";
+  text-decoration: none;
+  &:hover {
+    color: $color-text;
+    text-decoration: none;
+  }
+}
+@mixin typography-info {
+  color: $color-text-info;
+}
+@mixin typography-link {
+  color: $color-link;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $color-link-focus;
+    text-decoration: underline;
+  }
+}
+@mixin typography-title {
+  color: $color-text;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-decoration: none;
+  &:hover {
+    color: $color-text;
+    text-decoration: none;
+  }
+}
+@mixin typography-title-large {
+  @include typography-title;
+  font-size: 2.25em;
+}
+@mixin typography-title-medium {
+  @include typography-title;
+  font-size: 1.75em;
+}
+@mixin typography-title-small {
+  @include typography-title;
+  font-size: 1.4em;
+}
+
+a {
+  @include typography-link;
+}
+
+body {
+  @include typography-default;
+  margin: 1em;
+}
+
+.block-content {
+  h1 {
+    @include typography-title-large;
+  }
+}
+
+.list-sketches {
+  margin: 1em 0;
+  li {
+    list-style-type: disc;
+    ul {
+      margin-left: 1.22em;
+    }
+  }
+}
