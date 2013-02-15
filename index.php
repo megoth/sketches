@@ -23,7 +23,7 @@ function walk($path, $accept_index) {
         }
         $has_sketches = count($sketches) > 0;
         if ($has_sketches) {
-            echo "<ul>";
+            echo "<ul class='nav'>";
             foreach($sketches as $sketch) {
                 echo sprintf('<li><a href="%s" title="%s">%s</a>', $sketch["path"], $sketch["desc"], $sketch["path"]);
                 foreach($directories as $directory) {

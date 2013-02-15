@@ -5137,23 +5137,24 @@ body:hover {
 }
 /* line 84, ../sass/style.scss */
 .list-sketches li ul {
+  margin-bottom: 0;
   margin-left: 1.22em;
 }
-/* line 87, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .list-sketches li .icon-info-sign {
   float: right;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .icon-info-sign {
   display: none;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .qtip p {
   margin-bottom: 1em;
 }
-/* line 100, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .qtip p:last-child {
   margin-bottom: 0;
 }
