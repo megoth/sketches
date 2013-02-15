@@ -57,7 +57,8 @@ function walk($path, $accept_index) {
 <body>
     <div class="block-content">
         <h1>Sketches</h1>
-        <p>Below you'll find some sketches, made for various purposes.</p>
+        <p>Here you'll find sketches I made public.</p>
+        <p>The sketches are organized into a three, with each leaf being the actual sketch, while the branches will show the latest sketch within their scope.</p>
     </div>
     <div class="list-sketches">
         <?php walk(".", false); ?>

@@ -72,6 +72,9 @@ body {
   h1 {
     @include typography-title-large;
   }
+  p {
+    margin-bottom: 1em;
+  }
 }
 
 .list-sketches {

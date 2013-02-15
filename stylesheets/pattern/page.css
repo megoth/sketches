@@ -1,7 +1,12 @@
 /* line 2, ../../sass/pattern/page.scss */
 .page-sketches {
   background-color: black;
-  position: static;
+  position: fixed;
   right: 0;
   top: 1em;
+  z-index: 10000;
+}
+/* line 8, ../../sass/pattern/page.scss */
+.page-sketches .nav {
+  margin-bottom: 0;
 }

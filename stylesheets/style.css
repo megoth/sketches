@@ -5122,34 +5122,38 @@ body:hover {
   color: #303030;
   text-decoration: none;
 }
+/* line 75, ../sass/style.scss */
+.block-content p {
+  margin-bottom: 1em;
+}
 
-/* line 77, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .list-sketches {
   margin: 1em 0;
 }
-/* line 79, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .list-sketches li {
   list-style-type: disc;
 }
-/* line 81, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .list-sketches li ul {
   margin-left: 1.22em;
 }
-/* line 84, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .list-sketches li .icon-info-sign {
   float: right;
 }
 
-/* line 90, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .icon-info-sign {
   display: none;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .qtip p {
   margin-bottom: 1em;
 }
-/* line 97, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .qtip p:last-child {
   margin-bottom: 0;
 }
