@@ -1,6 +1,8 @@
 
 @import "compass/reset";
+@import "compass/css3/border-radius";
 @import "lib/bootstrap";
+@import "lib/jquery.qtip.2.0.1";
 
 $color-background:  #ffffff;
 $color-divider:     #dddddd;
@@ -9,7 +11,7 @@ $color-link:        #56A0D3;
 $color-link-focus:  #5D8AA8;
 $color-text:        #303030;
 $color-nav-main:    #a2c0c1;
-$color-text-info:   $color-meta;
+$color-text-info:   #999999;
 
 @mixin typography-default {
   color: $color-text;
@@ -78,6 +80,22 @@ body {
     list-style-type: disc;
     ul {
       margin-left: 1.22em;
+    }
+    .icon-info-sign {
+      float: right;
+    }
+  }
+}
+
+.icon-info-sign {
+  display: none;
+}
+
+.qtip {
+  p {
+    margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

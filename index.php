@@ -2,20 +2,30 @@
 function walk($path, $accept_index) {
     if($handle = opendir($path)) {
         $directories = array();
-        $paths = array();
+        $sketches = array();
         while (false !== ($entry = readdir($handle))) {
             $full_path = sprintf("%s/%s", $path, $entry);
             if (is_dir($full_path) && substr($entry, 0, 1) !== ".") {
-                array_push($directories, $full_path);
+                array_unshift($directories, $full_path);
             } elseif($accept_index && $entry === "index.php") {
-                array_push($paths, substr($path, 2));
+                $desc = "no description given...";
+                $config = sprintf("%s/config.php", $path);
+                if (file_exists($config)) {
+                    require_once($config);
+                    $desc = $description;
+                }
+                array_push($sketches, array(
+                    "desc" => $desc,
+                    "path" => substr($path, 2)
+                ));
             }
+            $index++;
         }
-        $has_paths = count($paths) > 0;
-        if ($has_paths) {
+        $has_sketches = count($sketches) > 0;
+        if ($has_sketches) {
             echo "<ul>";
-            foreach($paths as $path) {
-                echo sprintf('<li><a href="%s">%s</a>', $path, $path);
+            foreach($sketches as $sketch) {
+                echo sprintf('<li><a href="%s" title="%s">%s</a>', $sketch["path"], $sketch["desc"], $sketch["path"]);
                 foreach($directories as $directory) {
                     walk($directory, true);
                 }
@@ -52,4 +62,22 @@ function walk($path, $accept_index) {
     <div class="list-sketches">
         <?php walk(".", false); ?>
     </div>
+    <script src="javascript/lib/jquery.1.9.1.min.js" type="text/javascript"></script>
+    <script src="javascript/lib/jquery.qtip.2.0.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("a[title]").qtip({
+                style: {
+                    classes: 'qtip-dark qtip-rounded qtip-shadow',
+                    position: {
+                        my: 'left center',
+                        at: 'left top'
+                    },
+                    tip: {
+                        corner: 'left top'
+                    }
+                }
+            });
+        });
+    </script>
 </body>

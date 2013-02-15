@@ -1,6 +1,11 @@
 /* line 3, ../sass/style.medium.scss */
 body {
   margin: 1em auto;
-  max-width: 25em;
+  max-width: 20em;
   width: 100%;
+}
+
+/* line 9, ../sass/style.medium.scss */
+.icon-info-sign {
+  display: inline-block;
 }

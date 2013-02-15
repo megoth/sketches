@@ -251,7 +251,7 @@ pre code {
   vertical-align: baseline;
   white-space: nowrap;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: $color-meta;
+  background-color: #999999;
 }
 
 /* line 201, ../../sass/lib/bootstrap.scss */
@@ -749,7 +749,7 @@ legend {
 /* line 553, ../../sass/lib/bootstrap.scss */
 legend small {
   font-size: 15px;
-  color: $color-meta;
+  color: #999999;
 }
 
 /* line 561, ../../sass/lib/bootstrap.scss */
@@ -932,7 +932,7 @@ input[type="checkbox"]:focus {
 /* line 712, ../../sass/lib/bootstrap.scss */
 .uneditable-input,
 .uneditable-textarea {
-  color: $color-meta;
+  color: #999999;
   background-color: #fcfcfc;
   border-color: #cccccc;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
@@ -956,19 +956,19 @@ input[type="checkbox"]:focus {
 /* line 730, ../../sass/lib/bootstrap.scss */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: $color-meta;
+  color: #999999;
 }
 
 /* line 734, ../../sass/lib/bootstrap.scss */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: $color-meta;
+  color: #999999;
 }
 
 /* line 738, ../../sass/lib/bootstrap.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: $color-meta;
+  color: #999999;
 }
 
 /* line 742, ../../sass/lib/bootstrap.scss */
@@ -3271,7 +3271,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 11px;
   font-weight: bold;
   line-height: 20px;
-  color: $color-meta;
+  color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
@@ -3530,8 +3530,8 @@ input[type="submit"].btn.btn-mini {
 .nav-pills .open .dropdown-toggle,
 .nav > li.dropdown.open.active > a:hover {
   color: #ffffff;
-  background-color: $color-meta;
-  border-color: $color-meta;
+  background-color: #999999;
+  border-color: #999999;
 }
 
 /* line 2582, ../../sass/lib/bootstrap.scss */
@@ -3546,7 +3546,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 2588, ../../sass/lib/bootstrap.scss */
 .tabs-stacked .open > a:hover {
-  border-color: $color-meta;
+  border-color: #999999;
 }
 
 /* line 2591, ../../sass/lib/bootstrap.scss */
@@ -3691,7 +3691,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 2687, ../../sass/lib/bootstrap.scss */
 .nav > .disabled > a {
-  color: $color-meta;
+  color: #999999;
 }
 
 /* line 2690, ../../sass/lib/bootstrap.scss */
@@ -3729,7 +3729,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 2716, ../../sass/lib/bootstrap.scss */
 .breadcrumb .active {
-  color: $color-meta;
+  color: #999999;
 }
 
 /* line 2719, ../../sass/lib/bootstrap.scss */
@@ -3781,7 +3781,7 @@ input[type="submit"].btn.btn-mini {
 /* line 2757, ../../sass/lib/bootstrap.scss */
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  color: $color-meta;
+  color: #999999;
   cursor: default;
 }
 
@@ -3789,7 +3789,7 @@ input[type="submit"].btn.btn-mini {
 .pagination ul > .disabled > span,
 .pagination ul > .disabled > a,
 .pagination ul > .disabled > a:hover {
-  color: $color-meta;
+  color: #999999;
   background-color: transparent;
   cursor: default;
 }
@@ -3880,7 +3880,7 @@ input[type="submit"].btn.btn-mini {
 .pager .disabled a,
 .pager .disabled a:hover,
 .pager .disabled span {
-  color: $color-meta;
+  color: #999999;
   background-color: #fff;
   cursor: default;
 }
