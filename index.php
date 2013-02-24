@@ -1,45 +1,5 @@
 <?php
-function walk($path, $accept_index) {
-    if($handle = opendir($path)) {
-        $directories = array();
-        $sketches = array();
-        while (false !== ($entry = readdir($handle))) {
-            $full_path = sprintf("%s/%s", $path, $entry);
-            if (is_dir($full_path) && substr($entry, 0, 1) !== ".") {
-                array_unshift($directories, $full_path);
-            } elseif($accept_index && $entry === "index.php") {
-                $desc = "no description given...";
-                $config = sprintf("%s/config.php", $path);
-                if (file_exists($config)) {
-                    require_once($config);
-                    $desc = $description;
-                }
-                array_push($sketches, array(
-                    "desc" => $desc,
-                    "path" => substr($path, 2)
-                ));
-            }
-            $index++;
-        }
-        $has_sketches = count($sketches) > 0;
-        if ($has_sketches) {
-            echo "<ul class='nav'>";
-            foreach($sketches as $sketch) {
-                echo sprintf('<li><a href="%s" title="%s">%s</a>', $sketch["path"], $sketch["desc"], $sketch["path"]);
-                foreach($directories as $directory) {
-                    walk($directory, true);
-                }
-                echo "</li>";
-            }
-            echo "</ul>";
-        } else {
-            foreach($directories as $directory) {
-                walk($directory, true);
-            }
-        }
-        closedir($handle);
-    }
-}
+include("functions.php");
 ?><!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
